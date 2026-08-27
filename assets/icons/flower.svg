@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <radialGradient id="marigoldGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF275" />
+      <stop offset="60%" stop-color="#FF9F1C" />
+      <stop offset="100%" stop-color="#E71D36" />
+    </radialGradient>
+    <radialGradient id="centerOrange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD166" />
+      <stop offset="100%" stop-color="#B83B5E" />
+    </radialGradient>
+  </defs>
+  <g transform="translate(60,60)">
+    <!-- Outer Petals -->
+    <g>
+      <circle cx="0" cy="-36" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="25.5" cy="-25.5" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="36" cy="0" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="25.5" cy="25.5" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="0" cy="36" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="-25.5" cy="25.5" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="-36" cy="0" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+      <circle cx="-25.5" cy="-25.5" r="16" fill="url(#marigoldGrad)" opacity="0.95"/>
+    </g>
+    <!-- Inner Petal Layer -->
+    <g transform="rotate(22.5)">
+      <circle cx="0" cy="-24" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="17" cy="-17" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="24" cy="0" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="17" cy="17" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="0" cy="24" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="-17" cy="17" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="-24" cy="0" r="12" fill="url(#marigoldGrad)"/>
+      <circle cx="-17" cy="-17" r="12" fill="url(#marigoldGrad)"/>
+    </g>
+    <!-- Center disk -->
+    <circle cx="0" cy="0" r="15" fill="url(#centerOrange)"/>
+    <circle cx="0" cy="0" r="8" fill="#FFF275" opacity="0.8"/>
+  </g>
+</svg>

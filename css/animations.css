@@ -1,0 +1,222 @@
+/* ==========================================================================
+   SANVI'S RAKSHA BANDHAN SURPRISE - ANIMATION KEYFRAMES
+   ========================================================================== */
+
+/* Gentle Floating Animation */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* Pulsing Heart / Glow */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 77, 109, 0.7), 0 0 45px rgba(212, 175, 55, 0.4);
+  }
+}
+
+/* Diya Flame Flicker */
+@keyframes flameFlicker {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.04, 0.96) translate(1px, -1px) skewX(2deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.96, 1.05) translate(-1px, 1px) skewX(-2deg);
+    opacity: 0.9;
+  }
+  75% {
+    transform: scale(1.02, 0.98) translate(0, -1px);
+    opacity: 1;
+  }
+}
+
+@keyframes diyaAuraPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.95;
+  }
+}
+
+.diya-flame {
+  transform-origin: center bottom;
+  animation: flameFlicker 1.8s ease-in-out infinite;
+}
+
+.diya-aura {
+  transform-origin: center center;
+  animation: diyaAuraPulse 2.4s ease-in-out infinite;
+}
+
+/* Fade In & Scale Up Elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes modalPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.7) translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Slow Continuous Rotation */
+@keyframes spinSlow {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Shimmer Highlight Effect */
+@keyframes shimmerWave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-shimmer {
+  background: linear-gradient(90deg, #FF4D6D 0%, #FFD700 50%, #FF4D6D 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmerWave 4s linear infinite;
+}
+
+/* Rakhi Ribbon Thread Tying Animation */
+@keyframes ribbonTieAnimation {
+  0% {
+    stroke-dashoffset: 800;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.tying-active {
+  animation: pulseGlow 1.2s ease-in-out infinite;
+}
+
+/* Sparkle Floating */
+@keyframes sparkleFloat {
+  0% {
+    transform: translateY(0) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-25px) scale(1.2) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-50px) scale(0) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Sky Lanterns for Finale */
+@keyframes lanternFloatUp {
+  0% {
+    transform: translateY(100vh) translateX(0) scale(0.6);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  85% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-20vh) translateX(30px) scale(1.1);
+    opacity: 0;
+  }
+}
+
+.floating-sky-lantern {
+  position: fixed;
+  pointer-events: none;
+  z-index: 150;
+  width: 45px;
+  height: 60px;
+  background: radial-gradient(circle at 50% 60%, #FFF275, #FF9F1A 60%, #E71D36 100%);
+  border-radius: 8px 8px 16px 16px;
+  box-shadow: 0 0 25px rgba(255, 159, 26, 0.8), inset 0 0 10px #FFFFFF;
+  animation: lanternFloatUp 12s linear forwards;
+}
+
+.floating-sky-lantern::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 8px;
+  background: #FFE57F;
+  border-radius: 4px;
+  box-shadow: 0 0 12px #FFA834;
+}

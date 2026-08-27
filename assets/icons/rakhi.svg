@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4D0" />
+      <stop offset="50%" stop-color="#FFD700" />
+      <stop offset="85%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#996515" />
+    </radialGradient>
+    <radialGradient id="rubyGlow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF758C" />
+      <stop offset="40%" stop-color="#E81C4F" />
+      <stop offset="80%" stop-color="#A00D30" />
+      <stop offset="100%" stop-color="#600018" />
+    </radialGradient>
+    <radialGradient id="pearlGlow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#E0B0C0" />
+    </radialGradient>
+    <linearGradient id="silkThreadL" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E81C4F" stop-opacity="0" />
+      <stop offset="30%" stop-color="#E81C4F" />
+      <stop offset="70%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#E81C4F" />
+    </linearGradient>
+    <linearGradient id="silkThreadR" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#E81C4F" />
+      <stop offset="30%" stop-color="#FFD700" />
+      <stop offset="70%" stop-color="#E81C4F" />
+      <stop offset="100%" stop-color="#E81C4F" stop-opacity="0" />
+    </linearGradient>
+    <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Left Silk Thread with Beads -->
+  <path d="M 10,200 C 60,185 100,215 150,200" fill="none" stroke="url(#silkThreadL)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 15,205 C 65,190 105,220 150,203" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4"/>
+  
+  <circle cx="50" cy="195" r="7" fill="url(#goldGlow)"/>
+  <circle cx="80" cy="205" r="9" fill="url(#rubyGlow)"/>
+  <circle cx="110" cy="198" r="6" fill="url(#pearlGlow)"/>
+  <circle cx="130" cy="202" r="8" fill="url(#goldGlow)"/>
+
+  <!-- Right Silk Thread with Beads -->
+  <path d="M 250,200 C 300,185 340,215 390,200" fill="none" stroke="url(#silkThreadR)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 250,203 C 295,190 335,220 385,205" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4"/>
+  
+  <circle cx="270" cy="202" r="8" fill="url(#goldGlow)"/>
+  <circle cx="290" cy="198" r="6" fill="url(#pearlGlow)"/>
+  <circle cx="320" cy="205" r="9" fill="url(#rubyGlow)"/>
+  <circle cx="350" cy="195" r="7" fill="url(#goldGlow)"/>
+
+  <!-- Center Mandala / Floral Crest -->
+  <g transform="translate(200,200)">
+    <!-- Outer Golden Sunburst Rays -->
+    <g id="rays" filter="url(#glowEffect)">
+      <circle cx="0" cy="0" r="75" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="3,6"/>
+      <g id="petalRing">
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(30)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(60)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(90)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(120)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(150)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(180)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(210)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(240)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(270)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(300)" />
+        <path d="M 0,-72 Q 10,-55 0,-40 Q -10,-55 0,-72" fill="url(#goldGlow)" transform="rotate(330)" />
+      </g>
+    </g>
+
+    <!-- Mid Layer - Ruby Flower Petals -->
+    <g id="rubyPetals">
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(45)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(90)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(135)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(180)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(225)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(270)" />
+      <path d="M 0,-50 C 14,-36 14,-15 0,-5 C -14,-15 -14,-36 0,-50" fill="url(#rubyGlow)" transform="rotate(315)" />
+    </g>
+
+    <!-- Pearl Border Ring -->
+    <circle cx="0" cy="-35" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="24.7" cy="-24.7" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="35" cy="0" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="24.7" cy="24.7" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="0" cy="35" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="-24.7" cy="24.7" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="-35" cy="0" r="4.5" fill="url(#pearlGlow)"/>
+    <circle cx="-24.7" cy="-24.7" r="4.5" fill="url(#pearlGlow)"/>
+
+    <!-- Golden Center Disk -->
+    <circle cx="0" cy="0" r="28" fill="url(#goldGlow)" stroke="#FFF8DC" stroke-width="2" />
+    
+    <!-- Central Ruby Gem -->
+    <circle cx="0" cy="0" r="18" fill="url(#rubyGlow)"/>
+    
+    <!-- Small Golden Star in Center -->
+    <polygon points="0,-12 3,-4 11,-4 5,2 7,10 0,5 -7,10 -5,2 -11,-4 -3,-4" fill="#FFE57F"/>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF" />
+  </g>
+</svg>

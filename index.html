@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Sanvi ❤️ | A Special Raksha Bandhan Surprise</title>
+  <meta name="description" content="A cute, emotional, and interactive Raksha Bandhan digital surprise made especially for Sanvi.">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Floating Background Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Top Floating Navigation -->
+  <nav class="top-nav" aria-label="Main Navigation">
+    <a href="#home" class="nav-brand">
+      <span>Sanvi</span>
+      <span style="color: var(--color-rose);">❤️</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#rakhi" class="nav-link">Virtual Rakhi</a></li>
+      <li><a href="#letter" class="nav-link">Letter</a></li>
+      <li><a href="#memories" class="nav-link">Memories</a></li>
+      <li><a href="#special" class="nav-link">Special</a></li>
+      <li><a href="#gift" class="nav-link">Gift</a></li>
+      <li><a href="#finale" class="nav-link">Surprise</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="nav-music-toggle" class="nav-btn" title="Toggle Soft Festive Chimes" aria-label="Toggle Soft Festive Chimes">🔇</button>
+      <button id="nav-easter-star" class="nav-btn" title="Click for a little lucky secret ✨" aria-label="Easter Egg Star">⭐</button>
+    </div>
+  </nav>
+
+  <!-- Floating Virtual Hug Button -->
+  <div class="floating-actions">
+    <button id="float-hug-btn" class="float-hug-btn" aria-label="Send a Virtual Hug">
+      <span>🤗</span>
+      <span>Send Virtual Hug</span>
+    </button>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span>🌸</span>
+              <span>A Special Raksha Bandhan Surprise</span>
+            </div>
+            
+            <h1 class="hero-title">
+              For <span class="name-highlight">Sanvi</span> ❤️
+            </h1>
+            
+            <p class="hero-subtitle">
+              This Raksha Bandhan, even though I can't be there with you in person... I still wanted to make a little something special for you.
+            </p>
+            
+            <div class="hero-cta-group">
+              <a href="#rakhi" id="btn-open-surprise" class="btn-primary">
+                <span>Open Your Surprise</span>
+                <span>✨</span>
+              </a>
+              <a href="#memories" class="btn-secondary">
+                <span>Our Memories</span>
+                <span>📸</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Featured Photo Frame (Studio Portrait with Cherry Blossom - Main Pic) -->
+          <div class="hero-visual">
+            <div class="hero-card-frame">
+              <div class="float-tag float-tag-1">
+                <span>👑</span>
+                <span>Best Sister Ever</span>
+              </div>
+              <div class="float-tag float-tag-2">
+                <span>✨</span>
+                <span>Always In My Heart</span>
+              </div>
+              
+              <div class="hero-photo-wrapper">
+                <img src="assets/images/hero_sanvi.jpg" alt="Sanvi & Brother Special Moment" loading="eager">
+              </div>
+              
+              <div class="hero-card-caption">
+                <h4>Happy Raksha Bandhan, Sanvi!</h4>
+                <p>Miles apart, but closer than ever ❤️</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIRTUAL RAKHI TYING SECTION
+         ========================================================================== -->
+    <section id="rakhi" class="section rakhi-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">✨ Auspicious Ritual</span>
+          <h2 class="section-title">Tie Your Virtual Rakhi</h2>
+          <p class="section-desc">
+            Even across the miles, our sacred bond is tied with endless love, laughter, and lifelong protection.
+          </p>
+        </div>
+
+        <div class="thali-container">
+          <div class="puja-thali">
+            <div class="thali-decor-ring"></div>
+            
+            <div class="thali-items-grid">
+              <!-- Animated Diya Lamp -->
+              <div class="thali-diya" title="Sacred Diya Flame">
+                <img src="assets/icons/diya.svg" alt="Puja Diya Lamp" style="width:100%; height:100%;">
+              </div>
+
+              <!-- Traditional Sweets -->
+              <div class="thali-sweets" title="Festive Kaju Katli & Ladoo">
+                <img src="assets/icons/sweets.svg" alt="Festive Sweets" style="width:100%; height:100%;">
+              </div>
+
+              <!-- Roli Kumkum & Rice Bowl -->
+              <div class="thali-roli">
+                <div class="roli-bowl"></div>
+                <span class="roli-label">Roli & Akshat</span>
+              </div>
+
+              <!-- Center Ornate Rakhi -->
+              <div class="central-rakhi-box">
+                <div id="rakhi-graphic-wrapper" class="rakhi-graphic-wrapper" title="Click to tie the Rakhi!">
+                  <img src="assets/icons/rakhi.svg" alt="Golden Ruby Rakhi">
+                </div>
+                <div class="rakhi-tie-trigger">
+                  <button id="btn-tie-rakhi" class="btn-tie-rakhi">
+                    <span>Tie the Rakhi</span>
+                    <span>✨</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tied Message Reveal -->
+        <div id="rakhi-tied-card" class="rakhi-tied-card">
+          <div class="rakhi-seal-icon">❤️</div>
+          <h3>Rakhi Tied with Love!</h3>
+          <p>
+            “Distance may keep us apart today, but it can't make this bond any less special. ❤️”
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-gold); font-weight: 600;">
+            ✨ May your life always be filled with boundless joy, safety, and endless laughter.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         PERSONAL HANDWRITTEN LETTER SECTION
+         ========================================================================== -->
+    <section id="letter" class="section letter-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">💌 From The Heart</span>
+          <h2 class="section-title">A Little Something I Wanted to Say…</h2>
+          <p class="section-desc">
+            A small personal letter written just for you. Click on the sealed wax envelope to read it.
+          </p>
+        </div>
+
+        <div class="envelope-wrapper">
+          <div class="letter-card">
+            
+            <!-- Sealed Envelope Cover -->
+            <div id="envelope-cover" class="envelope-cover">
+              <div class="wax-seal">S ❤️</div>
+              <h3 style="font-family: var(--font-serif); color: var(--color-rose-dark); font-size: 1.6rem;">
+                Specially For Sanvi
+              </h3>
+              <p class="envelope-hint">Click the wax seal to open ✉️</p>
+              <p class="envelope-subhint">(A letter straight from the heart)</p>
+            </div>
+
+            <!-- Unfolded Letter Content -->
+            <div id="letter-content" class="letter-content">
+              <div class="letter-header">
+                <div class="letter-salutation">Hey Sanvi,</div>
+                <div class="letter-date">Raksha Bandhan 2026 ✨</div>
+              </div>
+
+              <div class="letter-body">
+                <p>
+                  I wish I could be there with you in person today to celebrate Raksha Bandhan, steal some sweets, and tease you like we always do. But even though distance keeps us apart today, I wanted to make sure you know how truly special you are to me.
+                </p>
+                <p>
+                  No matter how much time passes or how busy life gets, our bond has always been effortless, fun, and comforting. From laughing at the silly things to having someone who genuinely understands, having you as my sister is one of the best blessings in my life.
+                </p>
+                <p>
+                  I hope today brings a big smile to your face. I'm sending you all my love, endless good wishes, lifelong brotherly backup, and a virtual Rakhi tied with all the warmth in the world.
+                </p>
+                <p>
+                  Can't wait to catch up soon and celebrate properly in person! Keep shining, keep smiling, and know that you can always count on me, no matter what. ❤️
+                </p>
+              </div>
+
+              <div class="letter-signature">
+                With all my love & blessings,<br>
+                <span>Your Brother ❤️</span>
+              </div>
+
+              <div style="text-align: center;">
+                <button id="letter-toggle-back" class="letter-toggle-back">
+                  <span>✉️ Fold Letter Back</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         POLAROID MEMORIES SCRAPBOOK SECTION
+         ========================================================================== -->
+    <section id="memories" class="section memories-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">📸 Scrapbook</span>
+          <h2 class="section-title">Our Little Memories</h2>
+          <p class="section-desc">
+            A few glimpses of our journey together. Click any Polaroid to zoom in and flip to read the secret memory note!
+          </p>
+        </div>
+
+        <div class="scrapbook-board">
+          <div class="memories-grid">
+            
+            <!-- Polaroid 1 (Featured - User's Best/Main Photo with Studio Tree) -->
+            <div class="polaroid-card featured-polaroid mem-rot-1" data-id="5">
+              <div class="washi-tape gold"></div>
+              <span class="polaroid-star-badge">⭐ Favorite</span>
+              <div class="polaroid-img-wrapper">
+                <img src="assets/images/memory_5.jpg" alt="Favorite picture of Sanvi & Brother" loading="lazy">
+              </div>
+              <div class="polaroid-caption">
+                My favorite picture with you ✨
+              </div>
+            </div>
+
+            <!-- Polaroid 2 -->
+            <div class="polaroid-card mem-rot-2" data-id="1">
+              <div class="washi-tape"></div>
+              <div class="polaroid-img-wrapper">
+                <img src="assets/images/memory_1.jpg" alt="Sanvi & Brother sweet moment" loading="lazy">
+              </div>
+              <div class="polaroid-caption">
+                One of those moments ❤️
+              </div>
+            </div>
+
+            <!-- Polaroid 3 -->
+            <div class="polaroid-card mem-rot-3" data-id="2">
+              <div class="washi-tape lavender"></div>
+              <div class="polaroid-img-wrapper">
+                <img src="assets/images/memory_2.jpg" alt="Sanvi & Brother warm hug" loading="lazy">
+              </div>
+              <div class="polaroid-caption">
+                A memory worth keeping.
+              </div>
+            </div>
+
+            <!-- Polaroid 4 -->
+            <div class="polaroid-card mem-rot-4" data-id="3">
+              <div class="washi-tape"></div>
+              <div class="polaroid-img-wrapper">
+                <img src="assets/images/memory_3.jpg" alt="Sanvi & Brother fun outdoors" loading="lazy">
+              </div>
+              <div class="polaroid-caption">
+                Always a little chaotic 😂
+              </div>
+            </div>
+
+            <!-- Polaroid 5 -->
+            <div class="polaroid-card mem-rot-5" data-id="4">
+              <div class="washi-tape gold"></div>
+              <div class="polaroid-img-wrapper">
+                <img src="assets/images/memory_4.jpg" alt="Sanvi & Brother smiling together" loading="lazy">
+              </div>
+              <div class="polaroid-caption">
+                Some moments never get old.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         LIGHTBOX MODAL & FLIP CARD NOTE
+         ========================================================================== -->
+    <div id="photo-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+      <div class="modal-card-3d">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close photo modal">×</button>
+        
+        <div id="modal-card-inner" class="modal-card-inner">
+          <!-- Front Face: Image & Caption -->
+          <div class="modal-face modal-face-front">
+            <div class="modal-img-wrapper">
+              <img id="modal-photo-img" src="assets/images/memory_5.jpg" alt="Enlarged memory photo">
+            </div>
+            <div class="modal-caption-bar">
+              <h3 id="modal-caption-text">Memory Title</h3>
+              <button id="btn-flip-note" class="btn-flip-note">
+                <span>Read Note</span>
+                <span>🔄</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Back Face: Handwritten Memory Note -->
+          <div class="modal-face modal-face-back">
+            <span style="font-size: 2rem; margin-bottom: 0.5rem;">💌</span>
+            <div id="modal-date-text" style="font-size: 0.85rem; color: var(--color-gold); font-weight: 700; text-transform: uppercase; margin-bottom: 1rem;">
+              Special Memory
+            </div>
+            <p id="modal-note-content" style="font-family: var(--font-hand); font-size: 1.65rem; color: #2E1A29; line-height: 1.6;">
+              Memory note...
+            </p>
+            <button id="btn-flip-back" class="btn-flip-note" style="margin: 1.5rem auto 0; align-self: center;">
+              <span>Flip Back to Photo</span>
+              <span>🔄</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ==========================================================================
+         "THINGS THAT MAKE SANVI SPECIAL" SECTION
+         ========================================================================== -->
+    <section id="special" class="section special-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">💗 Sibling Appreciation</span>
+          <h2 class="section-title">A Few Things That Make Sanvi Special</h2>
+          <p class="section-desc">
+            Just a few of the countless reasons why you're simply the best sister anyone could ask for!
+          </p>
+        </div>
+
+        <div class="special-grid">
+          
+          <div class="special-card">
+            <div class="special-icon">🌟</div>
+            <h3>Instant Vibe Lifter</h3>
+            <p>
+              You somehow manage to make ordinary moments memorable and everything more fun just by being around.
+            </p>
+            <button class="special-agree-btn">
+              <span>Agree? Tap ❤️</span>
+            </button>
+          </div>
+
+          <div class="special-card">
+            <div class="special-icon">💖</div>
+            <h3>A Pure Heart</h3>
+            <p>
+              Underneath all the playful sibling teasing, you have one of the kindest and most caring hearts out there.
+            </p>
+            <button class="special-agree-btn">
+              <span>Agree? Tap ❤️</span>
+            </button>
+          </div>
+
+          <div class="special-card">
+            <div class="special-icon">😂</div>
+            <h3>Master of Fun & Chaos</h3>
+            <p>
+              Life is never boring with you. There's always a funny story, an unhinged laugh, or a memorable adventure waiting.
+            </p>
+            <button class="special-agree-btn">
+              <span>Agree? Tap ❤️</span>
+            </button>
+          </div>
+
+          <div class="special-card">
+            <div class="special-icon">👑</div>
+            <h3>Deserves The Entire World</h3>
+            <p>
+              You deserve all the happiness, success, good food, and love the universe has to offer today and always.
+            </p>
+            <button class="special-agree-btn">
+              <span>Agree? Tap ❤️</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         VIRTUAL GIFT BOX SECTION 🎁
+         ========================================================================== -->
+    <section id="gift" class="section gift-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">🎁 Digital Shagun</span>
+          <h2 class="section-title">A Little Digital Gift For You</h2>
+          <p class="section-desc">
+            “I couldn't hand you a gift myself this time… so here's a tiny digital one made with lots of love 🎁”
+          </p>
+        </div>
+
+        <div class="gift-box-wrapper">
+          
+          <!-- 3D Interactive Gift Box -->
+          <div id="interactive-gift-box" class="interactive-gift-box" title="Click to unwrap the gift box!">
+            <div class="gift-shimmer-rays"></div>
+            
+            <div class="gift-box-lid">
+              <div class="gift-bow"></div>
+            </div>
+
+            <div class="gift-box-base">
+              <div class="gift-ribbon-v"></div>
+              <div class="gift-ribbon-h"></div>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button id="btn-open-gift" class="btn-primary">
+              <span>Open Gift</span>
+              <span>🎁</span>
+            </button>
+          </div>
+
+          <!-- Revealed Vouchers & Message Card -->
+          <div id="gift-revealed-card" class="gift-revealed-card">
+            <div class="gift-card-header">
+              <span style="font-size: 2.4rem;">🎉</span>
+              <h3>Sanvi's VIP Sibling Vouchers</h3>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                Official, 100% redeemable anytime with zero expiration date!
+              </p>
+            </div>
+
+            <div class="gift-vouchers-list">
+              <div class="voucher-item">
+                <div class="voucher-icon">🍕</div>
+                <div class="voucher-details">
+                  <h4>One Grand In-Person Feast On Me</h4>
+                  <p>Valid at any cafe or restaurant of your choice the next time we hang out!</p>
+                </div>
+              </div>
+
+              <div class="voucher-item">
+                <div class="voucher-icon">🛡️</div>
+                <div class="voucher-details">
+                  <h4>Lifetime Brotherly Backup & Tech Support</h4>
+                  <p>Instant help, advice, and backup whenever you need it, 24/7/365.</p>
+                </div>
+              </div>
+
+              <div class="voucher-item">
+                <div class="voucher-icon">🤝</div>
+                <div class="voucher-details">
+                  <h4>100% “Win Any Argument” Pass</h4>
+                  <p>You automatically win one silly sibling dispute free of charge!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="gift-quote-highlight">
+              <p>
+                “The real gift is just a reminder that no matter how far away we are, you're always important to me. ❤️”
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         FESTIVE CELEBRATION MOMENT
+         ========================================================================== -->
+    <section class="section festive-section">
+      <div class="container">
+        <div class="festive-banner-card">
+          <span class="section-badge">✨ Festive Spirit</span>
+          <h2 style="font-family: var(--font-serif); font-size: 2.6rem; color: var(--color-rose-dark); margin: 0.8rem 0;">
+            Raksha Bandhan 2026 ❤️
+          </h2>
+          <p style="font-size: 1.15rem; color: var(--text-muted); max-width: 540px; margin: 0 auto;">
+            A day of celebrating pure love, cherished childhood memories, and a lifelong bond that never fades.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         FINAL SURPRISE & GRAND FINALE ✨
+         ========================================================================== -->
+    <section id="finale" class="section finale-section">
+      <div class="container">
+        <div class="finale-card">
+          
+          <div class="finale-preheading">
+            Until I Can Celebrate With You in Person…
+          </div>
+
+          <h2 class="finale-title">
+            Happy Raksha Bandhan, Sanvi ❤️
+          </h2>
+
+          <div class="finale-quote">
+            “Distance changes the celebration, not the bond.”
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <button id="btn-finale-surprise" class="btn-primary" style="padding: 1.1rem 2.4rem; font-size: 1.15rem;">
+              <span>One Last Surprise</span>
+              <span>✨</span>
+            </button>
+          </div>
+
+          <!-- Secret Easter Egg Cheeky Button -->
+          <div style="margin-top: 1rem;">
+            <button id="secret-easter-btn" style="background: none; border: none; font-size: 0.85rem; color: var(--text-light); cursor: pointer; text-decoration: underline;">
+              Don't click this 👀
+            </button>
+          </div>
+
+          <!-- Keepsake Certificate Box -->
+          <div id="keepsake-container" class="keepsake-card-container">
+            <div class="keepsake-badge">
+              <span style="font-size: 2.2rem;">🌸</span>
+              <h4>Sanvi's Eternal Rakhi Keepsake</h4>
+              <p>
+                Certified Best Sister in the entire universe. Blessed with infinite happiness, boundless love, and unbreakable sibling protection.
+              </p>
+              <div style="font-family: var(--font-hand); font-size: 1.5rem; color: var(--color-rose);">
+                ~ Forever your biggest supporter ❤️
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Crafted with all my love for <strong style="color: var(--color-rose-dark);">Sanvi</strong> <span class="footer-heart">❤️</span> Raksha Bandhan 2026
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/confetti.js"></script>
+  <script src="js/rakhi.js"></script>
+  <script src="js/memories.js"></script>
+  <script src="js/gift.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
