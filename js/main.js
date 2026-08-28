@@ -1,5 +1,5 @@
 /**
- * SANVI'S RAKSHA BANDHAN - MAIN CONTROLLER
+ * Harika'S RAKSHA BANDHAN - MAIN CONTROLLER
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. "Things That Make Sanvi Special" Tap-To-Agree
+  // 4. "Things That Make Harika Special" Tap-To-Agree
   const agreeBtns = document.querySelectorAll('.special-agree-btn');
   agreeBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1200);
       }
 
-      finaleSurpriseBtn.innerHTML = '<span>Happy Raksha Bandhan Sanvi! ❤️✨</span>';
+      finaleSurpriseBtn.innerHTML = '<span>Happy Raksha Bandhan Harika! ❤️✨</span>';
       finaleSurpriseBtn.style.background = 'linear-gradient(135deg, #2ED573, #10AC84)';
     });
   }
@@ -125,9 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
       starClicks++;
       if (window.soundFx) window.soundFx.playSparkle();
       if (starClicks === 1) {
-        showToast("🌟 Easter Egg #1: Sanvi, you're officially the cool sister (don't let it get to your head 😜)!");
+        showToast("🌟 Easter Egg #1: Harika, you're officially the cool sister (don't let it get to your head 😜)!");
       } else {
-        showToast("✨ Wishing you infinite smiles, success & endless happiness, Sanvi! ❤️");
+        showToast("✨ Wishing you infinite smiles, success & endless happiness, Harika! ❤️");
       }
       if (window.particleEngine) {
         const rect = easterStar.getBoundingClientRect();
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (secretBtn) {
     secretBtn.addEventListener('click', () => {
       if (window.soundFx) window.soundFx.playPop();
-      showToast("👀 Caught you! I knew you couldn't resist clicking! 😂 Love you Sanvi! ❤️");
+      showToast("👀 Caught you! I knew you couldn't resist clicking! 😂 Love you Harika! ❤️");
       if (window.particleEngine) {
         const rect = secretBtn.getBoundingClientRect();
         window.particleEngine.burst(rect.left + rect.width / 2, rect.top + rect.height / 2, 40);
