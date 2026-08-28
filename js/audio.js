@@ -1,5 +1,5 @@
 /**
- * SANVI'S RAKSHA BANDHAN - AUDIO & CHIMES SYNTHESIZER
+ * harika'S RAKSHA BANDHAN - AUDIO & CHIMES SYNTHESIZER
  * Implemented with pure Web Audio API for high reliability, zero lag & offline compatibility.
  */
 
