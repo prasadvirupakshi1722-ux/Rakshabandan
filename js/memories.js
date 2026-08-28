@@ -9,7 +9,7 @@ const MEMORIES_DATA = [
     caption: 'My absolute favorite picture with you ✨',
     badge: '🌟 Favorite Picture',
     date: 'A timeless classic',
-    note: "Sanvi, this picture captures how effortlessly graceful, fun, and radiant you are! No matter how much we tease each other, having you as my sister is the best gift in the world. Always cherish this one! 🌸✨"
+    note: "Harika, this picture captures how effortlessly graceful, fun, and radiant you are! No matter how much we tease each other, having you as my sister is the best gift in the world. Always cherish this one! 🌸✨"
   },
   {
     id: 1,
