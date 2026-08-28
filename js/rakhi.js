@@ -1,5 +1,5 @@
 /**
- * SANVI'S RAKSHA BANDHAN - VIRTUAL RAKHI TYING CONTROLLER
+ * Harika'S RAKSHA BANDHAN - VIRTUAL RAKHI TYING CONTROLLER
  */
 
 document.addEventListener('DOMContentLoaded', () => {
