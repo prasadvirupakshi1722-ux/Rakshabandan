@@ -1,5 +1,5 @@
 /**
- * SANVI'S RAKSHA BANDHAN - VIRTUAL GIFT BOX CONTROLLER
+ * harika'S RAKSHA BANDHAN - VIRTUAL GIFT BOX CONTROLLER
  */
 
 document.addEventListener('DOMContentLoaded', () => {
